@@ -1,0 +1,8 @@
+[user]
+	name = Ruan Petterson
+	email = ruan.petterson@unesp.br
+	signingkey = 5BB48885465B1B76
+[gpg]
+	program = gpg2
+[commit]
+	gpgsign = true
