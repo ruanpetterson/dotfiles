@@ -63,6 +63,11 @@ fi
 # Compilation flags
 export ARCHFLAGS="-arch x86_64"
 
+# Set exa as default dir listing
+if [[ -f /usr/bin/exa ]]; then
+    alias ls="exa"
+fi
+
 # Add NPM to PATH for scripting.
 if [[ -s "$HOME/.npm-packages/bin" ]]; then
   export PATH="$HOME/.npm-packages/bin:$PATH"
