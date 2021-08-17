@@ -78,6 +78,16 @@ if [[ -s $HOME/.local/bin ]]; then
     export PATH=$PATH:$HOME/.local/bin
 fi
 
+# Enable Fish-like syntax highlighting for zsh
+if [[ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh ]]; then
+    source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+fi
+
+# Enable Fish-like autosuggestions for zsh
+if [[ -f /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh ]]; then
+    source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
+fi
+
 autoload -Uz compinit
 compinit
 zstyle ':completion::complete:*' gain-privileges 1
