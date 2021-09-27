@@ -1,6 +1,9 @@
 # Dotfiles setup
 alias dotfiles="/usr/bin/git --git-dir=/home/ruan/.dotfiles/ --work-tree=/home/ruan"
 
+# sudo alias
+alias sudo="sudo -E"
+
 # User configuration
 HISTFILE=~/.histfile
 HISTSIZE=1000
