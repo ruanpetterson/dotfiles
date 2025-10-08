@@ -1,0 +1,14 @@
+# Does not inserts a blank line between shell prompts
+add_newline = false
+
+[username]
+show_always = true
+
+[hostname]
+ssh_only = true
+
+[localip]
+disabled = false
+
+[cmd_duration]
+disabled = true

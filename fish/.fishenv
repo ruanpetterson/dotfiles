@@ -1,0 +1,19 @@
+export CARGO_BUILD_JOBS="2"
+
+if [ -d /usr/local/opt/llvm ]; then
+    export LDFLAGS="-L/usr/local/opt/llvm/lib"
+    export CPPFLAGS="-I/usr/local/opt/llvm/include"
+fi
+
+if [ -f /usr/local/lib/librocksdb.dylib ]; then
+    export ROCKSDB_LIB_DIR="/usr/local/lib"
+fi
+
+if [ -f /usr/local/lib/librocksdb.a ]; then
+    export ROCKSDB_LIB_DIR="/usr/local/lib"
+    export ROCKSDB_LIB_STATIC="1"
+fi
+
+if [ -f $HOME/.cargo/env ]; then
+    . "$HOME/.cargo/env"
+fi
