@@ -1,0 +1,25 @@
+# [language-server.rust-analyzer.config]
+# checkOnSave = false
+
+[[language]]
+name = "json"
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "make"
+indent = { tab-width = 4, unit = "t" }
+
+[[language]]
+name = "toml"
+auto-format = true
+formatter = { command = "taplo", args = [
+    "fmt",
+    "--option",
+    "indent_string=    ",
+    "-",
+] }
+indent = { tab-width = 4, unit = " " }
+
+[[language]]
+name = "yaml"
+indent = { tab-width = 2, unit = " " }
