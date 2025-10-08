@@ -4,8 +4,6 @@ if status is-interactive
     eval "$(starship init fish)"
 end
 
-set --export PATH $HOME/.local/bin $PATH
-
-# bun
-set --export BUN_INSTALL "$HOME/.bun"
-set --export PATH $BUN_INSTALL/bin $PATH
+if test -d $HOME/.local/bin
+    set --export --prepend PATH $HOME/.local/bin
+end
