@@ -1,6 +1,6 @@
-# Dotfiles
-
 This repository holds my personal configuration files (dotfiles), organized and deployed using **GNU Stow**.
+
+## Overview
 
 From [GNU Stow](https://www.gnu.org/software/stow/) docs:
 
