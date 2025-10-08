@@ -1,4 +1,3 @@
-
 [env]
 TERM = "xterm-256color"
 
@@ -16,4 +15,4 @@ x = 10
 y = 32
 
 [general]
-import = ["/Users/ruan/.local/share/alacritty/themes/gruvbox_material_hard_dark.toml"]
+import = ["~/.local/share/alacritty/alacritty-theme/themes/gruvbox_material_hard_dark.toml"]
