@@ -1,5 +1,3 @@
-# rustup shell setup
-if not contains "$HOME/.cargo/bin" $PATH
-    # Prepending path in case a system-installed rustc needs to be overridden
-    set -x PATH "$HOME/.cargo/bin" $PATH
+if test -d $HOME/.cargo/bin
+    fish_add_path -p $HOME/.cargo/bin
 end
